@@ -3,7 +3,7 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.03
 
-Day 1 solved using Excel (maybe the 365 version is needed).
+[Day 1](https://adventofcode.com/2025/day/1) solved using Excel (maybe the 365 version is needed).
 
     Steps used:
     1. open input.txt in Excel
