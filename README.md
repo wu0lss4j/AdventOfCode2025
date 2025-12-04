@@ -20,7 +20,12 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
     Steps used:
     1. same input data as before
     2. in the fourth column if mod is 0 then display 1, else 0 (formulas used: IF)
-    3. add a fifth column that will compare the start and end position and return the number of multiples of 100 exclusively between positions (formulas used MAX, MIN, and FLOOR.MATH) and adds the value from the fourth column
+    3. update header of fourth column to sum the 1s (formulas used: SUM)
+    4. add a fifth column that will compare the start (last position) and end position (current position) and return the number of multiples of 100 exclusively between positions (formulas used MAX, MIN, and FLOOR.MATH)
+    5. add header of fifth column to sum the 1s (formulas used: SUM)
+    6. add both headers
 
-    $$x = 1$$
+    math formula: floor[(max(a;b)-1)/100]-floor[(min(a;b))/100]
+
+    Note: FLOOR.MATH considers that the floor of -3.2 is -4
     
