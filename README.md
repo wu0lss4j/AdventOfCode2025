@@ -39,4 +39,14 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
     4. Given the nature of the problem, we are looking for exact duplicates, this means any number that has an odd number of digits can be safely discarded, so some logic was added to adjust the start and finish to the nearest order of magnitude start and finish, i.e.: 999-55555 updates to 1000-9999
     5. Finally, loop each adjusted interval, and split the number in half, take that half of the digits and check if the current index is equal to those digits twice repeated
     6. If True than add to the sum.
+
+[Day 2 Part 2](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
     
+    Steps used:
+    1. Repeat steps 1-3 as in part 1
+    2. Given the nature of the problem, we are looking for patterns, every repeating sequence counts, but only if the number is itself a repeating sequence (aka more than once). So 11111 and 123123 are fine, and 1111 is only counted as 4x 1, and not 2x 11. This is important to break out of the loop
+    3. So I will loop each set interval, and then convert each number into a string and loop that, and finally loop with early break as it looks for repeating patterns.
+    4. This loop with early break will start at the first digit and check if the current number is composed only of that digit, if yes then add that number and break out of that loop, if not, get the first 2 digits and check if the current number is those two digits repeated N times where N is the string size divided by pattern size
+    5. tinse and tepeat
+
+    Note: an X digit number, can only start repeating up to X/2 digits, like if an 8 digit number starts like 1213.... then I don't need to check the pattern 12133... because it's obvious.
