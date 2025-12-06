@@ -50,3 +50,16 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
     5. tinse and tepeat
 
     Note: an X digit number, can only start repeating up to X/2 digits, like if an 8 digit number starts like 1213.... then I don't need to check the pattern 12133... because it's obvious.
+
+## 2025.12.06
+
+[Day 3 Part 1](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
+
+    Steps used:
+    1. Again... lazy to read from a file so I just pasted the whole input directly on the code.
+    2. Created a function that will return the largest digit in a string of digits accepting the string and a start location
+    3. Given the nature of the problem, we're to look for the largest combination of vales always left to right.
+    4. Need to search two times, after finding the largest digit in the string, lookup the next largest to the right of this digit (see Note below)
+    5. tinse and tepeat
+
+    Note: There could be a special case where the string is long string of 0 except for the last digit, so for this case the answer is the last digit.
