@@ -56,10 +56,20 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 [Day 3 Part 1](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
 
     Steps used:
-    1. Again... lazy to read from a file so I just pasted the whole input directly on the code.
-    2. Created a function that will return the largest digit in a string of digits accepting the string and a start location
-    3. Given the nature of the problem, we're to look for the largest combination of vales always left to right.
+    1. Again... lazy to read from a file so I just pasted the whole input directly on the code
+    2. Created a function that will return the first occurrence of the largest digit in a string of digits accepting the string and a start location
+    3. Given the nature of the problem, we're to look for the largest combination of vales always left to right
     4. Need to search two times, after finding the largest digit in the string, lookup the next largest to the right of this digit (see Note below)
     5. tinse and tepeat
 
     Note: There could be a special case where the string is long string of 0 except for the last digit, so for this case the answer is the last digit.
+
+[Day 3 Part 2](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
+
+    Steps used:
+    1. Again... lazy to read from a file so I just pasted the whole input directly on the code.
+    2. Updated the function to get also accept an end location (which could've been easier with a slice)
+    3. Given the nature of the problem, we're to look for the largest combination of 12 digits always left to right that yield the largest number
+    4. Now we need to search up to 12 times, but not the whole string, the first pass is from 0 up to the 12th from the end, the next pass is from the last max digit till 11th from the end, usw...
+    
+    Note: If at any time, the length of search space is 1, then all remaining digits in the string until the end must be part of the solution
