@@ -1,4 +1,4 @@
-já# Advent Of Code 2025
+# Advent Of Code 2025
 My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.03
@@ -76,7 +76,7 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.07
 
-Day 4 Part 1
+Day 4 Part 1 solved using python
 
     Steps used:
     1. I will write and upload tomo, part 2 is just a while loop of part 1
