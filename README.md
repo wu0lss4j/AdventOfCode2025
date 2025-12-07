@@ -1,4 +1,4 @@
-# Advent Of Code 2025
+já# Advent Of Code 2025
 My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.03
@@ -73,3 +73,10 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
     4. Now we need to search up to 12 times, but not the whole string, the first pass is from 0 up to the 12th from the end, the next pass is from the last max digit till 11th from the end, usw...
     
     Note: If at any time, the length of search space is 1, then all remaining digits in the string until the end must be part of the solution
+
+## 2025.12.07
+
+Day 4 Part 1
+
+    Steps used:
+    1. I will write and upload tomo, part 2 is just a while loop of part 1
