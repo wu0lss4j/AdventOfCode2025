@@ -53,7 +53,7 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.06
 
-[Day 3 Part 1](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
+[Day 3 Part 1](https://adventofcode.com/2025/day/3) solved using python (3.14.1)
 
     Steps used:
     1. Again... lazy to read from a file so I just pasted the whole input directly on the code
@@ -64,7 +64,7 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
     Note: There could be a special case where the string is long string of 0 except for the last digit, so for this case the answer is the last digit.
 
-[Day 3 Part 2](https://adventofcode.com/2025/day/2) solved using python (3.14.1)
+[Day 3 Part 2](https://adventofcode.com/2025/day/3) solved using python (3.14.1)
 
     Steps used:
     1. Again... lazy to read from a file so I just pasted the whole input directly on the code.
@@ -76,7 +76,35 @@ My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
 ## 2025.12.07
 
-Day 4 Part 1 solved using python
+[Day 4 Part 1](https://adventofcode.com/2025/day/4) solved using python (3.14.1)
 
     Steps used:
-    1. I will write and upload tomo, part 2 is just a while loop of part 1
+    - Read input.txt into memory, it's a matrix full of . and @, and need to count the @s that have
+    - Loop every char in every line until an @ symbol is found
+    - When found then loop around that symbol (8 directions and count the number of @ symbol found),
+      - for speed, maybe a small 3x3 loop, or -/+ in x, then y, then x&y combination, don't know yet
+      - check for error (like out of bounds when close to the edges of the matrix), and continue the loop until finished
+      - the number of 
+      - importantly a new table is formed on the fly that will hold the number of @ symbols found around each @ symbol including itself
+        .@..@         .3..3
+        @@.@@         33.44
+        ...@. becomes ...6.
+        @.@@@         1.454
+        ...@.         ...4.
+      - then just parse this new table and count the number of 1-4s
+
+    Sounds like a plan, let's do it!  
+
+## 2025.12.08
+
+[Day 4 Part 2](https://adventofcode.com/2025/day/4) solved using python (3.14.2)
+
+    Steps used:
+    - ...
+    - but for this part 2 of the puzzle, I need to remove the found @ that have less than 4 @s in its perimiter, so a new state needs to be saved
+    - then run again on the new state and see how many @ still exist with less than 4 @s in its perimiter and remove those
+    - rinse repeat, until all existing @s do NOT have less than 4 @s in its perimiter
+    
+    Note: for some reasons I made a perimiter function of variable size as I tried to predict that part 2 would go in this direction, alas, it did not :-)
+
+Day 5 wip...
