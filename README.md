@@ -1,6 +1,9 @@
 # Advent Of Code 2025
 My solutions to Advent of Code 2025 → https://adventofcode.com/2025
 
+Note: if you find any of these interesting, helpful, or just want to buy me coffee... you can do so here:
+[Buy me Café](https://ko-fi.com/T6T2Q57QX)
+
 ## 2025.12.03
 
 [Day 1 Part 1](https://adventofcode.com/2025/day/1) solved using Excel (maybe the 365 version is needed).
