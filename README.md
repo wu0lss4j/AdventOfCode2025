@@ -110,4 +110,18 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     
     Note: for some reasons I made a perimiter function of variable size as I tried to predict that part 2 would go in this direction, alas, it did not :-)
 
-Day 5 wip...
+## 2025.12.09
+
+[Day 5 Part 1](https://adventofcode.com/2025/day/5) solved using Excel 365 ~~python (3.14.2)~~
+
+    Steps used:
+    - copy-paste transpose the first block (interval classes) into a very long 174-Cell row
+    - split every interval class into values (formulas used TEXTSPLIT, and VALUE)
+    - copy-paste the second block into a column
+    - on every cell in the table created by the row and the column query if the value of the column is found on the row above (formulas used IF, and AND), of found return 1, if not return empty
+    - add a second column before the table that will add each row (formulas used SUM)
+    - at the top of this last column add the sum of all non zero values in this column (Formulas used COUNTIF)
+
+    Note: super easy barely an inconvinience
+
+    I still want to try and solve it with python thou...
