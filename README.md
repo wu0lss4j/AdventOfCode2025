@@ -125,3 +125,38 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     Note: super easy barely an inconvinience
 
     I still want to try and solve it with python thou...
+    
+## 2025.12.10
+
+[Day 5 Part 1 and 2](https://adventofcode.com/2025/day/5) solved using python (3.14.2)
+
+    I had technically solved this y-day. I wrote two different merge interval code pieces, the first starting from the end and popping the intervals from the intervals' list as they were being processed, and the second starting from the beginning and adding new elements to a new merged intervals' list. The end result is the same, but for some reason yesterday I may have copied the wrong number... I needed 6 submissions to get Day 5 part 2 right. 
+
+    Steps used:
+    - read input.txt
+    - input.txt has two blocks separated by a blank line, the first block contains the ruleset, that is, each line specifies classes of numbers, and the second block contains a sequence of numbers that we check against the classes, if the number does not fit any class, it is discarded. Some numbers may fit more than one class. Also, some classes overlap, so there is room for optmization, reducing the number of passes later on.
+    - load up the classes form the first block into a list and create a new list of merged classes
+    - parse the second block against each of classes in the second block, and break the loop on the first confirmation
+    - add the total number of confirmations... to 874
+    
+    As for part 2...
+    - since I had already did the interval class overlap consolidation, now I had only to iterate through all merged classes and sum their respective sizes
+    
+    Note: I had to design a different demo to catch all edge cases in this merge consolidation code
+    
+    1-5
+    3-12
+    4-8
+    9-11
+    14-21
+    20-25
+    16-17
+    15-18
+    13-19
+    
+    1
+    5
+    8
+    11
+    17
+    32
