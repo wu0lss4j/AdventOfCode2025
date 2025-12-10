@@ -160,3 +160,16 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     11
     17
     32
+
+[Day 6 Part 1](https://adventofcode.com/2025/day/6) solved using python (3.14.2)
+
+    I figure I could rip thru this one in MSExcel but I believed if I did this in python, I could adapt the code easily for part 2. Spoiler alert, part 2 is basically a whole new problem :(
+
+    
+    Steps used:
+    - read input file and parse each line into lists using a variable number of empty spaces as dividers
+    - there could be any number of lines in the file and thousands of values
+    - the last line contains symbols that dictate either the sum or product of the previous lines
+    - first I remove all spaces until I have just values which are placed into a list as int
+    - then a result vector is created to hold the operation until Σ summations and Π products are carried out
+    - the answer to Part 1 is to tally up all operations
