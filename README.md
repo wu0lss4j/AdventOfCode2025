@@ -128,7 +128,7 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     
 ## 2025.12.10
 
-[Day 5 Part 1 and 2](https://adventofcode.com/2025/day/5) solved using python (3.14.2)
+[Day 5 Parts 1 and 2](https://adventofcode.com/2025/day/5) solved using python (3.14.2)
 
     I had technically solved this y-day. I wrote two different merge interval code pieces, the first starting from the end and popping the intervals from the intervals' list as they were being processed, and the second starting from the beginning and adding new elements to a new merged intervals' list. The end result is the same, but for some reason yesterday I may have copied the wrong number... I needed 6 submissions to get Day 5 part 2 right. 
 
