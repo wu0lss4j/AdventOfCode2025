@@ -164,7 +164,6 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
 [Day 6 Part 1](https://adventofcode.com/2025/day/6) solved using python (3.14.2)
 
     I figure I could rip thru this one in MSExcel but I believed if I did this in python, I could adapt the code easily for part 2. Spoiler alert, part 2 is basically a whole new problem :(
-
     
     Steps used:
     - read input file and parse each line into lists using a variable number of empty spaces as dividers
@@ -173,3 +172,19 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     - first I remove all spaces until I have just values which are placed into a list as int
     - then a result vector is created to hold the operation until Σ summations and Π products are carried out
     - the answer to Part 1 is to tally up all operations
+
+## 2025.12.10
+
+[Day 6 Part 2](https://adventofcode.com/2025/day/6) solved using python (3.14.2)
+
+    Steps used:
+    
+    - of course part 2 had to be completely different to part 1... much code to be trashed, much waste
+    - now srlsy, read the same input file
+    - the last line contains symbols that dictate either the Σ summations and Π products
+    - this time around we have to Σ and Π operations in blocks, each block can have 2 or 3 columns (maybe more?) and is limited by an empty column, non empty columns contain the values which are written vertically
+    - my intuition here is "rotate 90deg clockwise" each digit for each column and then execute the operation
+    - this time I will over engineer this by working with a transposed list, because, why not
+    - the answer to part 2 is to tally up all operations
+
+    _This has been my favorite challenge so far. It was not particularly difficult, but I enjoyed it very much_
