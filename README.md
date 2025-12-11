@@ -173,7 +173,7 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     - then a result vector is created to hold the operation until Σ summations and Π products are carried out
     - the answer to Part 1 is to tally up all operations
 
-## 2025.12.10
+## 2025.12.11
 
 [Day 6 Part 2](https://adventofcode.com/2025/day/6) solved using python (3.14.2)
 
