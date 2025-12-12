@@ -188,3 +188,11 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     - the answer to part 2 is to tally up all operations
 
     _This has been my favorite challenge so far. It was not particularly difficult, but I enjoyed it very much_
+
+## 2025.12.12
+
+[Day 6 Part 1](https://adventofcode.com/2025/day/6) solved using python (3.14.2)
+
+    Steps used:
+
+    - Too tired to write here right now. It's great. And part 2 seems doable as well without too much change to my part 1 code.
