@@ -30,6 +30,8 @@ def total_combinations(req_buttons: int, total_buttons: int) -> int:
 
 
 def comb(options: list, choices: int) -> list:
+    # options - number of buttons available
+    # choices - number of buttons pressed
     res = []
     stack = [(0, [])]
 
