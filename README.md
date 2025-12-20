@@ -236,6 +236,7 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
 
 ## 2025.12.20
 
-[Day 10 Part 1](https://adventofcode.com/2025/day/10) solved using python (3.14.2)
+[Day 10 Parts 1 and 2](https://adventofcode.com/2025/day/10) solved using python (3.14.2)
 
     This was a nice challenge that reminded me a lot of the solved game called NIM. I need from the start I needed XOR. Also looking at all the description I kind of guessed what part 2 would entail. So I tried to anticipate this by baking some kind of cost calculation into the code. The trickiest part was building a function that would accept the list of possible moves (AKA buttons) and list all the possible combinations as a function of the required button presses, avoiding recursion ofc.
+    A million years ago I learned of simplex at my old uni. I never thought I would have to go back to it... as I was happily building bruteforcing my way until the first coef matrix was a 9x9 (at least that...) but each variable could theoretically range from 0 to 62... so meffing this, would be iterating over 62^9, or roughly a couple millenia on my potato computer. So I gave up and installed PuLP and let it go to town. I am thinking how I can share my code that uses PuLP.
