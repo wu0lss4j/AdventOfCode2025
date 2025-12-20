@@ -218,13 +218,13 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
 
 ## 2025.12.15
 
-[Day 8 Parts 1 and 2](https://adventofcode.com/2025/day/7) solved using python (3.14.2)
+[Day 8 Parts 1 and 2](https://adventofcode.com/2025/day/8) solved using python (3.14.2)
 
     This one annoyed me a bit. Part 1 took me 99.9% of the time and part 2 took me less than 0.1%. Mostly it was my fault because I didn't understand where stop criteria was for part 1. I parsed until I had 1000 point pairs connected by their shortest distance, and not as soon as the distance of 1000 point pairs was checked. Anyways, the code for part 1 and 2 are very similar. In part 2 I had to remove the stop condition from part 1 and find the last connected pair.
 
-## 2025.12.18
+## 2025.12.15-18
 
-[Day 9 Parts 1 and 2](https://adventofcode.com/2025/day/7) solved using python (3.14.2)
+[Day 9 Parts 1 and 2](https://adventofcode.com/2025/day/9) solved using python (3.14.2)
 
     While I solved part 1 in a few minutes, it took me 3 days to solve part 2. I admit I bruteforced it, eliminating areas from largest till a suitable largest area could be found. I really disliked this challenge. I could see it mathematically, but I struggled to code the edge cases. Nevertheless, the zigzaging orthogonal point cloud distribution made it easy to render a visualization of the point cloud and the "boundary" polygon.
     My intuition was as follows, any valid rectangle needed to fulfill the following 3 conditions:
@@ -233,3 +233,9 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
     3- in intersection between rectangle's edges and the polygon formed by the point cloud -- what if the polygon's edges are colinear with the rectangle's edges, what if the point cloud is concave
 
     I designed 2 extra demo point clouds to test my code, and my code fails!!! However my code works against the Advent of Code challenge. I don't like this, and I want to fix it.
+
+## 2025.12.20
+
+[Day 10 Part 1](https://adventofcode.com/2025/day/10) solved using python (3.14.2)
+
+    This was a nice challenge that reminded me a lot of the solved game called NIM. I need from the start I needed XOR. Also looking at all the description I kind of guessed what part 2 would entail. So I tried to anticipate this by baking some kind of cost calculation into the code. The trickiest part was building a function that would accept the list of possible moves (AKA buttons) and list all the possible combinations as a function of the required button presses, avoiding recursion ofc.
