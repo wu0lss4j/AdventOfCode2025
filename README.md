@@ -240,3 +240,11 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
 
     This was a nice challenge that reminded me a lot of the solved game called NIM. I need from the start I needed XOR. Also looking at all the description I kind of guessed what part 2 would entail. So I tried to anticipate this by baking some kind of cost calculation into the code. The trickiest part was building a function that would accept the list of possible moves (AKA buttons) and list all the possible combinations as a function of the required button presses, avoiding recursion ofc.
     A million years ago I learned of simplex at my old uni. I never thought I would have to go back to it... as I was happily building bruteforcing my way until the first coef matrix was a 9x9 (at least that...) but each variable could theoretically range from 0 to 62... so meffing this, would be iterating over 62^9, or roughly a couple millenia on my potato computer. So I gave up and installed PuLP and let it go to town. I am thinking how I can share my code that uses PuLP.
+
+## 2025.12.22..2026.01.06
+
+[Day 11 Part 1](https://adventofcode.com/2025/day/11) solved using python (3.14.2)
+
+    This one was a tough one. I think I made it more complicated than it really was, but I really wanted to code my own graph depth first search in which explored paths would not be explored more than once, storing the information of the path until the destination node is found, however it would not store any path information for dead ends. Overall I'm quite satisfied with the result and I think this algo can be improved to further detect cycles. I like it. It took me longer because of the festivities.
+    Now looking to solve part 2... hopefully I can take advantage of what I did in part 1. Overkill I know...
+    
