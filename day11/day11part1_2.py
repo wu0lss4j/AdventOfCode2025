@@ -337,9 +337,9 @@ def main():
     print(f"{nodes_list}")
     # print(f"insanity check, is nodes_list class Nodes? {isinstance(nodes_list, Nodes)}")
 
-    print('\n ... calculating all paths between "you" and "out "')
-    node_from = "you"
+    node_from = "svr"
     node_to = "out"
+    print(f"\n ... calculating all paths between |{node_from}| and |{node_to}|")
 
     if node_from not in nodes_list.nodes:
         print(f"ERROR: {node_from=} is not found in the graph")
@@ -366,7 +366,7 @@ def main():
     # print(f"{paths_list}")
     # print(f"{paths_list=}")
 
-    paths_list.calculate_paths(nodes_list, "you", "out")
+    paths_list.calculate_paths(nodes_list, node_from, node_to)
     print(f"{paths_list}")
     print()
 

@@ -247,4 +247,10 @@ Note: if you find any of these interesting, helpful, or just want to buy me coff
 
     This one was a tough one. I think I made it more complicated than it really was, but I really wanted to code my own graph depth first search in which explored paths would not be explored more than once, storing the information of the path until the destination node is found, however it would not store any path information for dead ends. Overall I'm quite satisfied with the result and I think this algo can be improved to further detect cycles. I like it. It took me longer because of the festivities.
     Now looking to solve part 2... hopefully I can take advantage of what I did in part 1. Overkill I know...
-    
+
+## 2026.01.07
+
+[Day 11 Part 2](https://adventofcode.com/2025/day/11) solved using python (3.14.2)
+
+    Basically I took the code from day 1, and remove all outputs to the console, and had it generate a file for each connection between SVR-FFT FFT-DAC DAC-OUT because DAC-FFT returned 0 paths, I assumed (but could not confirm 100%) that there were no cycles or loops. With FFT-DAC as mandatory stops in this order I just needed to search all paths from SVR-FFT and then from DAC-OUT. I got this result yesterday, which I added together, that made no sense, since they must be multiplied, something I figured out when I was going to bed, and early this morning submitted again to much much happiness. This dragon is slain.
+    BTW, a quick calculation of all paths between SVR-OUT without printing the paths returns 146.227.339.062.493.693 paths!
